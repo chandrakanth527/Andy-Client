@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vavis_background"
+    android:gravity="center_vertical"
+    tools:ignore="ContentDescription" >
+
+    <RelativeLayout
+        android:id="@+id/media_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/vavis_background" >
+
+        <RelativeLayout
+            android:id="@+id/remote_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dip"
+            android:background="@color/vavis_background"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/remote_background"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:src="@drawable/remote_background_square_black_alpha" />
+
+            <ImageView
+                android:id="@+id/KEY_RETURN"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/ic_exit" />
+
+            <ImageView
+                android:id="@+id/KEY_MUTE"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="23dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/ic_mute" />
+
+            <ImageView
+                android:id="@+id/KEY_BACK"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="160dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/ic_back" />
+
+            <ImageView
+                android:id="@+id/KEY_MENU"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="160dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/ic_menu" />
+
+            <ImageView
+                android:id="@+id/KEY_OK"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_select_white" />
+
+            <ImageView
+                android:id="@+id/KEY_DOWN"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/KEY_OK"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_down_white" />
+
+            <ImageView
+                android:id="@+id/KEY_UP"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/KEY_DOWN"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-15dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_up_white" />
+
+            <ImageView
+                android:id="@+id/KEY_RIGHT"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/KEY_OK"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/KEY_OK"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_right_white" />
+
+            <ImageView
+                android:id="@+id/KEY_LEFT"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/KEY_OK"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/KEY_OK"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_left_white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        android:background="@color/vavis_background"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/bordershadow"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/KEY_CHNL_UP"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_up_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:text="CH"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/KEY_CHNL_DOWN"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_down_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/KEY_POWER"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bordershadow"
+                android:onClick="buttonOnClick"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_power" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/KEY_INPUT"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bordershadow"
+                android:onClick="buttonOnClick"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:text="INPUT"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/bordershadow"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/KEY_VOL_UP"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_up_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:text="VOL"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/KEY_VOL_DOWN"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@android:color/transparent"
+                android:onClick="buttonOnClick"
+                android:src="@drawable/remote_down_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

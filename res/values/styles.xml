@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <color name="background">#272727</color>
+    <color name="foreground">#2F2F2F</color>
+    <color name="transparent">#00000000</color>
+    <color name="foreground_light">#353535</color>
+    <color name="blue">#12c897</color>
+    <color name="holo_blue">#00a6d6</color>
+    <color name="holo_blue_dark">#006b8a</color>
+    <color name="default_screen_bg">#f9f9f9</color>
+    <color name="rounded_container_bg">#222222</color>
+    <color name="rounded_container_border">#3b3f44</color>
+    <color name="light_gray_header_color">#646663</color>
+    
+    <color name="vavis_background">#151515</color>
+    <color name="vavis_list">#191919</color>
+    <color name="vavis_list_light">#212121</color>
+    <color name="vavis_foreground">#191919</color>
+    <color name="vavis_listseperator">#333333</color>
+    <color name="vavis_listseperator_dark">#151515</color>
+
+</resources>
